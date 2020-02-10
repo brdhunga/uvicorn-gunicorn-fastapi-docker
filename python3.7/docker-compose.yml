@@ -3,6 +3,7 @@ services:
   web:
     build: .
     command: uvicorn main:app --host 0.0.0.0
+    restart: no
     ports:
      - "8003:8000"
     volumes:
